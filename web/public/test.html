@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Imágenes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease; 
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="https://picsum.photos/id/34/200" alt="Imagen 1"></div>
+            <div class="slide"><img src="https://picsum.photos/id/45/200" alt="Imagen 2"></div>
+            <div class="slide"><img src="https://picsum.photos/id/41/200" alt="Imagen 3"></div>
+        </div>
+    </div>
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        let index = 0;
+
+        function showNextSlide() {
+            index++;
+            if (index >= slide.length) {
+                index = 0; 
+            }
+            const offset = -index * 100; 
+            slides.style.transform = `translateX(${offset}%)`; 
+        }
+
+        
+        setInterval(showNextSlide, 3000);
+    </script>
+</body>
+</html>

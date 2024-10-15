@@ -1,0 +1,54 @@
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-header);
+  color: var(--font-color-description);
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: var(--font-family-text);
+  color: var(--font-color-description);
+  line-height: 1.5rem;
+}
+
+.button {
+  font-family: var(--font-family-text);
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+
+  &:hover {
+    background-color: white;
+    color: var(--primary-color);
+  }
+}
+.button.diff{
+  background-color: var(--third-color);
+  &:hover {
+    background-color: white;
+    color: var(--third-color);
+  }
+}
+
+main  {
+  padding: 2rem 0 4rem 0;
+  section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  }
+}

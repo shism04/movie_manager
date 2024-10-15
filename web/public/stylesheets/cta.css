@@ -1,0 +1,35 @@
+section#cta{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    min-height: 75vh;
+
+  
+  
+    div.content{
+      z-index:1;
+      max-width: var(--site-width);
+    }
+  
+    h1{
+      font-size: clamp( 1.2rem, var(--font-size-h1), 5rem);
+      color: var(--font-color-description);
+    }
+  
+    p{
+      font-size:calc( clamp( 1.2rem, var(--font-size-h1), 5rem) / 2.5);
+      margin-bottom: 2.5rem;
+      line-height: 2rem;
+      max-width: 80%;
+      margin: auto;
+      margin-block-end: 1.5rem;
+    }
+    a{
+        margin-left: 1rem;
+
+    }
+  
+  }
