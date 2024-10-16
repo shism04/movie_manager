@@ -1,3 +1,7 @@
+@import url(var.css);
+body{
+  font-family: var(--font-family-text);
+}
 h1,
 h2,
 h3 {
@@ -45,10 +49,41 @@ p {
 
 main  {
   padding: 2rem 0 4rem 0;
-  section{
+}
+
+section{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+ }
+
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  padding: 1rem;
+
+
+  span {
+    font-size: 2.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    color: var(--font-color-description);
   }
+
+  span.secure {
+    color: var(--primary-color);
+  }
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  font-family: var(--font-family-text);
+}
+a{
+  text-decoration: none;
 }

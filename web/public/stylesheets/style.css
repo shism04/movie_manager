@@ -18,25 +18,6 @@ img {
   object-position: center center;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: .7rem;
-  padding: 1rem;
-
-
-  span {
-    font-size: 2.5rem;
-    font-family: "Afacad Flux", sans-serif;
-    font-weight: 600;
-    color: var(--font-color-description);
-  }
-
-  span.secure {
-    color: var(--primary-color);
-  }
-
-}
 
 main {
   background-color: var(--contrast-color);
@@ -110,7 +91,7 @@ div.main {
               left: 0;
               width: 100%;
               height: 100%;
-              background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+              background: linear-gradient(to top, black 10%, rgba(0, 0, 0, 0));
               z-index: 5;
             }
           }
@@ -123,7 +104,7 @@ div.main {
             transform: translateX(-50%);
             z-index: 10;
 
-            .titl-yr{
+            .titl-yr {
               display: flex;
               align-items: center;
               justify-content: space-between;
@@ -132,15 +113,16 @@ div.main {
               span {
                 color: white;
                 font-size: 1.2rem;
-                font-family: inherit;
+                font-family: var(--font-family-header);
               }
-  
+
               h3 {
                 font-size: 1.9rem;
               }
-            }
-            .button {
-              font-size: 1.1rem;
+
+              .button {
+                font-size: 1.1rem;
+              }
             }
           }
         }
@@ -151,13 +133,22 @@ div.main {
   section#reviews {
     div.content {
       border-radius: 1rem;
-      box-shadow: 0px 0px 12px 1px rgb(39, 39, 39);
       padding: 2rem;
       display: flex;
       flex-direction: column;
       gap: 3rem;
 
       div.review {
+        &:nth-child(2n) {
+          border-left: 2px solid var(--third-color);
+        }
+
+        &:nth-child(2n+1) {
+          border-left: 2px solid var(--primary-color);
+        }
+
+        padding-left: 1.5rem;
+
         div.info {
           display: flex;
           align-items: center;
@@ -168,19 +159,20 @@ div.main {
             display: flex;
             gap: 1rem;
 
-            img{
+            img {
               width: 5rem;
               height: 5rem;
               border-radius: 50%;
             }
           }
-          img{
+
+          img {
             width: 7rem;
             height: auto;
           }
         }
 
-        p{
+        p {
           max-width: 85%;
         }
       }
