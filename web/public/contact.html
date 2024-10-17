@@ -7,9 +7,235 @@
     <title>Cinesecure</title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="stylesheets/compnents.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
 </head>
 
 <body>
-    
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="home.html"><img src="images/logo.png" alt="">
+                    <span>cine<span><span class="secure">Secure</span>
+                </a>
+            </div>
+            <!--
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">My Collection</a>
+                    <ul class="submenu">
+                        <li><a href="#">View All Movies</a></li>
+                        <li><a href="#">Add Movie</a></li>
+                        <li><a href="#">Favorite Movies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            -->
+            <ul>
+                <li><a id="open-offcanvas" href="signIn.html" class="button">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="cta-contact">
+        <div class="text">
+            <h1>We're Here to Help!</h1>
+            <p>If you have any questions, comments, or just want to get in touch with us, feel free to use the form
+                below. Our team is ready to assist you and answer all your concerns. Your feedback is very important to
+                us, so we look forward to hearing from you soon!</p>
+            <a href="#" class="button" id="contact-us">Contact Us</a>
+        </div>
+    </section>
+    <main>
+        <div class="main">
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>What is Movie Collector?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>Movie Collector is an app designed to help users organize and manage their personal movie
+                                collections. You can easily add, categorize, and track the movies you own, want to
+                                watch, or
+                                have
+                                already seen.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>How do I add a movie to my collection?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>To add a movie, simply search for the title using the search bar, then click "Add to
+                                Collection."
+                                You
+                                can also manually input movie details if it’s not found in our database.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>Can I track movies I want to watch?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>Yes! You can create a "Watchlist" to track movies you want to watch in the future. Just
+                                add
+                                them
+                                to
+                                your watchlist from the movie’s detail page.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>Can I export my movie collection?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>Yes, you can export your entire movie collection to a CSV file for backup or use in other
+                                applications. Go to "Settings" and select the "Export Collection" option.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>Is Movie Collector free?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>Movie Collector offers a free version with basic features, and a premium version with
+                                additional
+                                features such as unlimited collection size, advanced sorting, and cloud backup.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            <h3>How do I contact support?</h3>
+                            <img src="images/icons/add.png" alt="add/remove">
+                        </div>
+                        <div class="answer">
+                            <p>If you need help, you can contact our support team via the "Help & Support" section in
+                                the
+                                app,
+                                or
+                                send an email to support@moviecollectorapp.com.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-details">
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <img src="images/icons/email.png" alt="Email Icon" class="contact-icon">
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:support@moviecollectorapp.com">support@moviecollectorapp.com</a></p>
+                        </div>
+                    </div>
+                    <div class="separate"></div>
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <img src="images/icons/phone-call.png" alt="Phone Icon" class="contact-icon">
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+954567321">+954567321</a></p>
+                        </div>
+                    </div>
+                    <div class="separate"></div>
+                    <!-- Social Media -->
+                    <div class="contact-item">
+                        <img src="images/icons/social-media.png" alt="Social Media Icon" class="contact-icon">
+                        <div>
+                            <h3>Follow Us</h3>
+                            <div class="social-media">
+                                <img src="images/social_media/facebook.png" alt="">
+                                <img src="images/social_media/linkedin.png" alt="">
+                                <img src="images/social_media/instagram.png" alt="">
+                                <img src="images/social_media/twitter.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div>
+                <h2>Thank you for visiting our movie collection management app!</h2>
+                <p>Your feedback is invaluable to us as we strive o enhance,our community of movie lovers. Join us on
+                    this cinematic journey, let's celebrate the magic through flm!</p>
+                <p>
+                    <a href="#"><img class="social-icon" src="images/instagram.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/whatsapp.png" alt=""></a>
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Enlace Legal 1</a></li>
+                    <li><a href="#">Enlace Legal 2</a></li>
+                    <li><a href="#">Enlace Legal 3</a></li>
+                    <li><a href="#">Enlace Legal 4</a></li>
+                    <li><a href="#">Enlace Legal 5</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Enlace Legal 1</a></li>
+                    <li><a href="#">Enlace Legal 2</a></li>
+                    <li><a href="#">Enlace Legal 3</a></li>
+                    <li><a href="#">Enlace Legal 4</a></li>
+                    <li><a href="#">Enlace Legal 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="register">
+            <p>Sign up for free</p>
+            <a href="#" class="button diff">Register</a>
+        </div>
+        <div class="social-media">
+            <img src="images/social_media/facebook.png" alt="">
+            <img src="images/social_media/linkedin.png" alt="">
+            <img src="images/social_media/instagram.png" alt="">
+            <img src="images/social_media/twitter.png" alt="">
+        </div>
+        <div class="foot">
+            &copy; Developed by Ismael Sihammou Anahnah | 2024-2025
+        </div>
+    </footer>
+    <div class="img-contact">
+        <img src="images/icons/chat.png" alt="contact" id="contact-us">
+    </div>
+    <dialog>
+        <img src="images/icons/close.png" id="close-dialog" alt="close">
+        <h3>Contact us!</h3>
+        <p>Have any questions or suggestions on how we can improve our page? We’d love to hear from you! Get in touch
+            with our team, and we’ll get back to you in no time.
+            Your feedback is invaluable, and we're here to help with anything you need!</p>
+        <form>
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea name="message" cols="30" rows="5" placeholder="Message..." required></textarea>
+            <button type="button" class="button" id="submit-form">Send</button>
+        </form>
+    </dialog>
+    <script src="javascripts/dialog.js"></script>
+    <script src="javascripts/faq.js"></script>
 </body>
+
 </html>

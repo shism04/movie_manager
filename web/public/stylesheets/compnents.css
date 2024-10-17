@@ -49,6 +49,7 @@ p {
 
 main  {
   padding: 2rem 0 4rem 0;
+  
 }
 
 section{
@@ -63,6 +64,13 @@ section{
   align-items: center;
   gap: .7rem;
   padding: 1rem;
+
+  img {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+  }
 
 
   span {
