@@ -53,6 +53,7 @@ nav {
       font-family: var(--font-family-text);
       color:  white;
       font-weight: 500;
+      margin-left: 1rem;
     }
 
     li {

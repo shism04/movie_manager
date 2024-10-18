@@ -7,7 +7,7 @@ section#sign-in {
     color: white;
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right,var(--third-color),var(--primary-color));
+    display: block;
 
 
     div.header{
@@ -41,8 +41,8 @@ section#sign-in {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        margin: 3rem 0 4rem 0;
+        min-height: 100vh;
+        background: linear-gradient(to right,var(--third-color),var(--primary-color));
     
         div.form-box {
             padding: 2rem 3rem;
@@ -98,6 +98,34 @@ section#sign-in {
                 transform: rotate(45deg); 
             }
 
+            div.other-meth-sign{
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    padding: .5rem -2rem;
+                    border: 2px solid grey;
+                    border-radius: 1rem;
+                    margin-bottom: 1rem;
+                    text-decoration: none;
+                    transition: .4s;
+
+                    &:hover{
+                        background-color: rgb(220, 220, 220);
+
+                    }
+                    img{
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+
+                    p{
+                        color: var(--contrast-color);
+                    }
+                }
+            }
+
             form{
     
 
@@ -110,17 +138,17 @@ section#sign-in {
                     margin-bottom: 1rem;
                 }
 
-                a#submit{
+                input[type="submit"]{
                     &:hover{
                         background-color: var(--third-color);
                         color: white;
                     }
                 }
-
             }
 
             a{    
              text-decoration: none;
+             margin-top: 1rem;
         
 
              &:hover{
