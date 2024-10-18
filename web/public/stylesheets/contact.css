@@ -37,6 +37,7 @@ section#cta-contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 1rem;
         border-radius: 1rem;
 
@@ -44,7 +45,7 @@ section#cta-contact {
         h1 {
             font-size: clamp(1.2rem, var(--font-size-h1), 5rem);
             color: var(--font-color-header);
-            text-align: left;
+            text-align: center;
         }
 
         p {
@@ -55,8 +56,6 @@ section#cta-contact {
 
         a {
             margin-top: 2rem;
-            max-width: 6.7rem;
-            margin-left: 30%;
 
             &:hover {
                 background-color: var(--third-color);

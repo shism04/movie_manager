@@ -47,9 +47,11 @@ section#sign-in {
         div.form-box {
             padding: 2rem 3rem;
             background-color: white;
+            min-height: 60vh;
             color: black;
             display: flex;
             flex-direction: column;
+            justify-content: center;
 
             h1{
                 font-size: 2rem;
