@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="stylesheets/signUp.css">
+</head>
+
+<body>
+    <section id="sign-up">
+        <div class="header">
+            <%- include('partials/logo') %>
+            <div>
+                <a href="/contact" class="button diff">Contact</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="form-box">
+                <h1>Sign Up</h1>
+                <form method="post"> 
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                    <input type="email" name="userEmail" placeholder="Email" required>
+                    <input type="password" name="pswd" placeholder="Password" required>
+                    <input type="password" name="confirmPswd" placeholder="Confirm Password" required>
+                    <label>
+                        <input type="checkbox" class="check" required>
+                        <span class="checkmark"></span>
+                        I agree to terms of use
+                    </label>
+                    <input type="submit" name="submit" class="button" value="Sign Up">
+                </form>
+                <a href="/signin" class="forgot-pswd">Already have an account? Sign In</a>
+                <div class="other-meth-sign">
+                    <div class="google">
+                        <a href="#">
+                            <img src="images/social_media/google.png" alt="Google">
+                            <p>Sign Up with Google</p>
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#">
+                            <img src="images/social_media/facebook.png" alt="Facebook">
+                            <p>Sign Up with Facebook</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+
+</html>

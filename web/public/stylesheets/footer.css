@@ -73,7 +73,7 @@ footer {
     }
 
     div.foot {
-        background-color: var(--third-color);
+        background: linear-gradient(to right,var(--third-color),var(--primary-color));
         padding: 2rem;
     }
 
