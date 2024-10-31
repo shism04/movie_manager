@@ -1,7 +1,11 @@
 [
-    {
-      "email": "kingismaelsihammou@gmail.com",
-      "password": ""
-    }
+  {
+    "fullName": "Ismael sihammou",
+    "email": "maria.lopez@example.com",
+    "password": "$2b$10$3pdsein6TihV89qX7pKggueNf5oa9Bne5zx3t8ARyGQ7.4JtRElSC"
+  },
+  {
+    "fullName": "maria.lopez@example.com",
+    "email": "1234"
+  }
 ]
-  

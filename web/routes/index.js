@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var users = require('../data/dataProvider');
-
+var reciver = require('../data/dataReciever');
+ 
 
 router.get('/', function(req, res, next) {
   if (req.session.login)  res.render('home', { head_title: 'home',user:req.session.user });
@@ -32,6 +33,19 @@ router.post('/signin', function(req,res,next){
     }
 });
 
+router.post('/signUp', function(req,res,next){  
+  reciver.insertUser(req.body.userEmail, req.body.pswd, async (err) => {
+    if (err) {
+        console.error("Error al registrar el usuario:", err);
+        res.redirect('/signUp');
+    } else {
+        const newUser = await users.findUser(req.body.userEmail, req.body.pswd); 
+        req.session.login = true;
+        req.session.user = newUser; 
+        res.redirect('/home'); 
+    }
+});
+});
 
 router.get('/contact', function(req, res, next) {
   res.render("contact", {head_title: "Contact"});

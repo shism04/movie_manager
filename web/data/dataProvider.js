@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt');
+if (require('./users.json')){
 const users= require('./users.json');
 
 function getAllUsers(){
@@ -19,4 +20,5 @@ async function findUser(email, password) {
 module.exports={
     getAllUsers,
     findUser
+}
 }
