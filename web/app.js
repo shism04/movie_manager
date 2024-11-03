@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var multer = require('multer');
 var session = require('express-session');
 
 var indexRouter = require('./routes/index');
@@ -13,6 +14,19 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+      cb(null, 'uploads/'); // Directory to save uploaded images
+  },
+  filename: function (req, file, cb) {
+      cb(null, Date.now() + path.extname(file.originalname)); // Save with a unique filename
+  }
+});
+
+const upload = multer({ storage: storage });
+
+app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
   secret: '776655431234', // Replace with your secret key
@@ -29,6 +43,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/uploads', express.static('uploads'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 

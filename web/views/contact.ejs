@@ -3,17 +3,12 @@
 
 <head>
     <%- include('partials/head') %>
-    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="nav-bar">
-            <%- include('partials/logo') %>
-            <ul>
-                <li><a id="open-offcanvas" href="/signin" class="button">Sign In</a></li>
-            </ul>
-        </nav>
+        <%- include('partials/header') %>
     </header>
     <section id="cta-contact">
         <div class="text">
@@ -32,7 +27,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>What is Movie Collector?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>Movie Collector is an app designed to help users organize and manage their personal movie
@@ -46,7 +41,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>How do I add a movie to my collection?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>To add a movie, simply search for the title using the search bar, then click "Add to
@@ -59,7 +54,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>Can I track movies I want to watch?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>Yes! You can create a "Watchlist" to track movies you want to watch in the future. Just
@@ -73,7 +68,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>Can I export my movie collection?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>Yes, you can export your entire movie collection to a CSV file for backup or use in other
@@ -84,7 +79,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>Is Movie Collector free?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>Movie Collector offers a free version with basic features, and a premium version with
@@ -96,7 +91,7 @@
                     <div class="faq-item">
                         <div class="question">
                             <h3>How do I contact support?</h3>
-                            <img src="images/icons/add.png" alt="add/remove">
+                            <img src="/images/icons/add.png" alt="add/remove">
                         </div>
                         <div class="answer">
                             <p>If you need help, you can contact our support team via the "Help & Support" section in
@@ -113,7 +108,7 @@
                 <div class="contact-details">
                     <!-- Email -->
                     <div class="contact-item">
-                        <img src="images/icons/email.png" alt="Email Icon" class="contact-icon">
+                        <img src="/images/icons/email.png" alt="Email Icon" class="contact-icon">
                         <div>
                             <h3>Email Us</h3>
                             <p><a href="mailto:support@moviecollectorapp.com">support@moviecollectorapp.com</a></p>
@@ -122,7 +117,7 @@
                     <div class="separate"></div>
                     <!-- Phone -->
                     <div class="contact-item">
-                        <img src="images/icons/phone-call.png" alt="Phone Icon" class="contact-icon">
+                        <img src="/images/icons/phone-call.png" alt="Phone Icon" class="contact-icon">
                         <div>
                             <h3>Call Us</h3>
                             <p><a href="tel:+954567321">+954567321</a></p>
@@ -131,14 +126,14 @@
                     <div class="separate"></div>
                     <!-- Social Media -->
                     <div class="contact-item">
-                        <img src="images/icons/social-media.png" alt="Social Media Icon" class="contact-icon">
+                        <img src="/images/icons/social-media.png" alt="Social Media Icon" class="contact-icon">
                         <div>
                             <h3>Follow Us</h3>
                             <div class="social-media">
-                                <img src="images/social_media/facebook.png" alt="">
-                                <img src="images/social_media/linkedin.png" alt="">
-                                <img src="images/social_media/instagram.png" alt="">
-                                <img src="images/social_media/twitter.png" alt="">
+                                <img src="/images/social_media/facebook.png" alt="">
+                                <img src="/images/social_media/linkedin.png" alt="">
+                                <img src="/images/social_media/instagram.png" alt="">
+                                <img src="/images/social_media/twitter.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -151,7 +146,7 @@
         <%- include('partials/footer') %>
     </footer>
     <%- include('partials/fab') %>
-    <script src="javascripts/dialog.js"></script>
-    <script src="javascripts/faq.js"></script>
+    <script src="/javascripts/dialog.js"></script>
+    <script src="/javascripts/faq.js"></script>
 </body>
 </html>

@@ -1,15 +1,7 @@
-@import url(var.css);
-@import url(compnents.css);
-@import url(header.css);
-@import url(cta.css);
-@import url(footer.css);
-
 body {
   margin: 0;
   padding: 0;
 }
-
-
 
 img {
   width: 60px;
@@ -18,15 +10,12 @@ img {
   object-position: center center;
 }
 
-
 main {
   background-color: var(--contrast-color);
   color: var(--font-color-cta);
 }
 
 div.main {
-  max-width: var(--site-width);
-  margin: auto;
 
   section#features {
 

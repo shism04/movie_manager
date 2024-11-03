@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/my-collection.css">
+    <link rel="stylesheet" href="/stylesheets/header-loged.css">
+</head>
+
+<body>
+  <header>
+    <%- include('partials/header-loged') %>
+  </header>
+  <div class="container">
+    <!-- Sidebar con búsqueda y filtros -->
+    <aside class="sidebar" id="sidebar">
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar película..." />
+      </div>
+      <div id="exist-filters">
+        <h4 style="color: rgb(219, 219, 219);">Added filters</h4>
+        <div id="active-filters">
+
+        </div>
+      </div>
+      <div class="box sort">
+        <h3>Sort by</h3>
+        <label class="custom"><input type="checkbox" class="check" name="sort" value="release"><span
+            class="checkmark"></span>Release date</label>
+        <label class="custom"><input type="checkbox" class="check" name="sort" value="title"><span
+            class="checkmark"></span>Title</label>
+        <label class="custom"><input type="checkbox" class="check" name="sort" value="add_date"><span
+            class="checkmark"></span>Add date</label>
+      </div>
+      <div class="filter-section">
+        <h3>Filters</h3>
+        <div class="box genre">
+          <h4>Genre</h4>
+          <label class="custom"><input type="checkbox" class="filter" value="Action"><span class="checkmark"></span>
+            Action</label>
+          <label class="custom"><input type="checkbox" class="filter" value="Comedy"><span class="checkmark"></span>
+            Comedy</label>
+          <label class="custom"><input type="checkbox" class="filter" value="Drama"><span class="checkmark"></span>
+            Drama</label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenido principal con encabezado y grid de películas -->
+    <main class="main-content">
+      <a href="/new-movie" class="add-new">Add
+        new
+        movie <img style="background-color: var(--third-color); border-radius: 2rem; padding: .5rem;" width="10"
+          height="10" src="/images/icons/add.png" alt="add/remove"></a>
+      <h1>My Movie Collection</h1>
+      <% if (films && films.length> 0) { %>
+        <div class="movie-grid">
+          <!-- Example of a movie card -->
+          <% films.forEach((film)=> { %>
+            <a href="/movieDetails/<%= film.id %>" class="movie-card-link">
+              <div class="movie-card">
+                <img src="<%= '/' + film.image.replace(/\\/g, '/') %>" alt="<%= film.title %>" class="movie-image"> 
+                <div class="movie-info">
+                  <h3 class="movie-title">
+                    <%= film.title %>
+                  </h3>
+                  <div class="extra">
+                    <span class="year">
+                      <%= film.releaseYr %>
+                    </span>
+                    <span class="favorite">⭐</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <% }) %>
+        </div>
+        <% } else { %>
+          <div class="no-film">
+            <p>No films available yet. Add some to see them here!</p>
+            <a href="/new-movie">
+              <img style="background-color: var(--third-color); border-radius: 2rem; padding: .5rem;" width="30"
+                height="30" src="/images/icons/add.png" alt="add icon">
+            </a>
+          </div>
+          <% } %>
+    </main>
+  </div>
+
+
+  <footer>
+    <%- include('partials/footer') %>
+  </footer>
+  <script src="/javascripts/scroll.js"></script>
+  <script src="/javascripts/added_filters.js"></script>
+  <script src="/javascripts/offcanvas.js"></script>
+</body>
+
+</html>

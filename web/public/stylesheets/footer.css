@@ -1,8 +1,8 @@
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--font-color-description);
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 247, 247);
     color: var(--font-color-description);
     gap: 1rem;
     text-align: center;
@@ -24,7 +24,7 @@ footer {
         gap: 1rem;
 
         h2,p{
-            color: var(--contrast-color);
+            color: white;
         }
 
         div {
@@ -61,7 +61,7 @@ footer {
         
         p{
             font-size: 1.3rem;
-            color: var(--contrast-color);  
+            color: white;  
             font-weight: 500; 
         }
         .button{

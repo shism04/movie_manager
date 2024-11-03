@@ -39,12 +39,14 @@ section#sign-up { /* Cambiar el ID a sign-up */
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        background: linear-gradient(to right, var(--third-color), var(--primary-color));
+        padding: 3rem;
+        background-color: white;
     
         div.form-box {
             padding: 2rem 3rem;
             background-color: white;
-            min-height: 70vh; /* Ajustar la altura mínima según sea necesario */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.196);
+            min-height: 60vh;
             color: black;
             display: flex;
             flex-direction: column;
@@ -64,40 +66,8 @@ section#sign-up { /* Cambiar el ID a sign-up */
             }
 
             input {
-                display: inline-block;
                 cursor: pointer;
             }
-
-            label input {
-                display: none;
-            }
-            
-            label .checkmark {
-                width: 18px; 
-                height: 18px;
-                border-radius: 3px; 
-                margin-right: 10px;
-                position: relative;
-                background-color: rgb(207, 207, 207);
-                transition: .3s;
-            }
-            
-            label input:checked + .checkmark {
-                background-color: var(--primary-color); 
-            }
-            
-            label input:checked + .checkmark::after {
-                content: '';
-                position: absolute;
-                left: 6px; 
-                top: 1px; 
-                width: 6px; 
-                height: 12px; 
-                border: solid white; 
-                border-width: 0 1px 1px 0;
-                transform: rotate(45deg); 
-            }
-
             div.other-meth-sign {
                 a {
                     display: flex;
@@ -128,11 +98,9 @@ section#sign-up { /* Cambiar el ID a sign-up */
 
             form {
                 input:not(.check), a {
-                    font-size: 1rem;
                     padding: 1rem .5rem;
                     min-width: 45vh;
-                    border-radius: .2rem;
-                    border: 1px solid rgb(160, 160, 160);
+                    border-radius: .2rem;  
                     margin-bottom: 1rem;
                 }
 

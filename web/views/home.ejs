@@ -3,54 +3,50 @@
 
 <head>
     <%- include('partials/head') %>
-    <link rel="stylesheet" href="stylesheets/home.css">
+        <link rel="stylesheet" href="/stylesheets/home.css">
+        <link rel="stylesheet" href="/stylesheets/cta.css">
 </head>
 
 <body>
-    <header id="top">
-        <div class="bdrop"></div>
-        <nav class="nav-bar">
-            <%- include('partials/logo') %>
-            <ul>
-                <li><a href="/contact" class="button diff">Contact</a></li>
-                <li><a id="open-offcanvas" href="/signin" class="button">Sign In</a></li>
-            </ul>
-        </nav>
-        <section id="cta">
-            <div class="content">
-                <h1>Manage Your Movie Collection with Ease</h1>
-                <p>Join a vibrant community of flm enthusiasts! Efortlessly track your favorite movies
-                    explore new titles, and curate a personalized library. Dive deep into each
-                    flm's details and ensure your collection is always up-to-date.</p>
-                <a href="signIn.html" class="button">Get started</a>
-            </div>
-        </section>
+    <header>
+        <%- include('partials/header') %>
     </header>
+    <section id="cta">
+        <div class="bdrop"></div>
+        <div class="content">
+            <h1>Manage Your Movie Collection with Ease</h1>
+            <p>Join a vibrant community of flm enthusiasts! Efortlessly track your favorite movies
+                explore new titles, and curate a personalized library. Dive deep into each
+                flm's details and ensure your collection is always up-to-date.</p>
+            <a href="/signIn.html" class="button">Get started</a>
+        </div>
+    </section>
+    </div>
     <main>
         <div class="main">
             <section id="features">
                 <h2>Reasons to Join Us</h2>
                 <div class="container">
                     <div class="box">
-                        <img src="images/tracking.png" alt="">
+                        <img src="/images/tracking.png" alt="">
                         <h3>Comprehensive Movie Tracking</h3>
                         <p>Keep a detailed record of your movie collection,
                             including titles, genres, directors, and personal ratings</p>
                     </div>
                     <div class="box">
-                        <img src="images/feature.png" alt="">
+                        <img src="/images/feature.png" alt="">
                         <h3>Exclusive Features</h3>
                         <p>Gain access to exclusive features like
                             recommendations based on your collection</p>
                     </div>
                     <div class="box">
-                        <img src="images/user.png" alt="" class="large">
+                        <img src="/images/user.png" alt="" class="large">
                         <h3>User-Friendly Interface</h3>
                         <p>Enjoy a clean and intuitive interface designed for
                             ease of use, we made sure that it matchs your expectatives</p>
                     </div>
                     <div class="box">
-                        <img src="images/verified.png" alt="" class="large">
+                        <img src="/images/verified.png" alt="" class="large">
                         <h3>Secure and Private</h3>
                         <p>Your information is safe with us. We prioritize user
                             privacy and data security,
@@ -64,7 +60,7 @@
                     <div class="slides">
                         <div class="slide">
                             <div class="imagen">
-                                <img src="images/dune.jpg" alt="dune-movie-imagen">
+                                <img src="/images/dune.jpg" alt="dune-movie-imagen">
                                 <div class="backdrop"></div>
                             </div>
                             <div class="info">
@@ -79,7 +75,7 @@
 
                         <div class="slide">
                             <div class="imagen">
-                                <img src="images//top-gun.jpg" alt="topgun-movie-imagen">
+                                <img src="/images//top-gun.jpg" alt="topgun-movie-imagen">
                                 <div class="backdrop"></div>
                             </div>
                             <div class="info">
@@ -93,7 +89,7 @@
                         </div>
                         <div class="slide">
                             <div class="imagen">
-                                <img src="images/oppenhaimer.jpeg" alt="oppenhaimer-movie-imagen">
+                                <img src="/images/oppenhaimer.jpeg" alt="oppenhaimer-movie-imagen">
                                 <div class="backdrop"></div>
                             </div>
                             <div class="info">
@@ -107,7 +103,7 @@
                         </div>
                         <div class="slide">
                             <div class="imagen">
-                                <img src="images/interstellar.jpg" alt="interstellar">
+                                <img src="/images/interstellar.jpg" alt="interstellar">
                                 <div class="backdrop"></div>
                             </div>
                             <div class="info">
@@ -128,10 +124,10 @@
                     <div class="review">
                         <div class="info">
                             <div class="reviwer">
-                                <img src="images/reviews/juan.jpg" alt="">
+                                <img src="/images/reviews/juan.jpg" alt="">
                                 <h3>Juan</h3>
                             </div>
-                            <img src="images/reviews/star.png" alt="" class="stars">
+                            <img src="/images/reviews/star.png" alt="" class="stars">
                         </div>
                         <p class="review">"La aplicación es excelente para organizar mi colección de películas. Me gusta
                             lo
@@ -146,10 +142,10 @@
                     <div class="review">
                         <div class="info">
                             <div class="reviwer">
-                                <img src="images/reviews/eva.jpg" alt="">
+                                <img src="/images/reviews/eva.jpg" alt="">
                                 <h3>Eva</h3>
                             </div>
-                            <img src="images/reviews/star (1).png" alt="" class="stars">
+                            <img src="/images/reviews/star (1).png" alt="" class="stars">
                         </div>
                         <p class="review">"¡Esta aplicación es justo lo que necesitaba! Me permite tener mi colección de
                             películas organizada y acceder a ella en cualquier momento. La interfaz es limpia y fácil de
@@ -164,7 +160,7 @@
     <footer>
         <%- include('partials/footer') %>
     </footer>
-    <script src="javascripts/front.js"></script>
+    <script src="/javascripts/front.js"></script>
 </body>
 
 

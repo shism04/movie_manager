@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/movieDetails.css">
+    <link rel="stylesheet" href="/stylesheets/header-loged.css">
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header-loged') %>
+    </header>
+    <main>
+        <h1>Movie details</h1>
+        <section id="movie_details" style="background-image: url('<%= "/" + movie.image.replace(/\\/g, "/") %>'); background-position: center center; background-size: cover;">
+            <div class="bdrop"></div>
+            <div class="image">
+                <img src="<%= '/' + movie.image.replace(/\\/g,'/') %>" alt="<%= movie.title %>-image">
+            </div>
+            <div class="details">
+                <h2>
+                    <%= movie.title %>
+                </h2>
+                <div class="description">
+                    <h3>Description:</h3>
+                    <p>
+                        <%= movie.description %>
+                    </p>
+                </div>
+                <div class="release_yr">
+                    <h3>Release year:</h3>
+                    <p>
+                        <%= movie.releaseYr %>
+                    </p>
+                </div>
+                <div class="genre">
+                    <h3>Genre(s):</h3>
+                    <p>
+                        <%= movie.genres %>
+                    </p>
+                </div>
+                <div class="director">
+                    <h3>Director:</h3>
+                    <p>
+                        <%= movie.director %>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <section class="copy_section">
+                <h2>My copies of <%= movie.title %>
+                </h2>
+                <div class="copias">
+                    <% movie.copies.forEach((copy)=> { %>
+                        <div class="copia">
+                            <h3>Copia #<%= copy.id %>
+                            </h3>
+
+                            <div class="details condition">
+                                <h4>Condition:</h4>
+                                <p>
+                                    <%= copy.condition %>
+                                </p>
+                            </div>
+
+                            <div class="details format">
+                                <h4>Format:</h4>
+                                <p>
+                                    <%= copy.format %>
+                                </p>
+                            </div>
+
+                            <div class="details date-add">
+                                <h4>Date added:</h4>
+                                <p>
+                                    <%= copy.dateAdd %>
+                                </p>
+                            </div>
+                        </div>
+                    <% }) %>
+                        <div class="copia addnew">
+                            <button>
+                                <img src="/images/icons/add.png" alt="add/remove">
+                                <span>Add another Copie</span>
+                            </button>
+                        </div>
+                </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+    <script src="/javascripts/offcanvas.js"></script>
+</body>
+</html>

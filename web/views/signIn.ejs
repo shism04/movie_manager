@@ -3,24 +3,21 @@
 
 <head>
     <%- include('partials/head') %>
-    <link rel="stylesheet" href="stylesheets/signIn.css">
+    <link rel="stylesheet" href="/stylesheets/signIn.css">
 </head>
 
 <body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
     <section id="sign-in">
-        <div class="header">
-            <%- include('partials/logo') %>
-            <div>
-                <a href="/contact" class="button diff">Contact</a>
-            </div>
-        </div>
         <div class="box">
             <div class="form-box">
                 <h1>Sign in</h1>
                 <form method="post">
                     <input type="email" name="userEmail" placeholder="Email" required>
                     <input type="password" name="pswd" placeholder="Password" required>
-                    <label>
+                    <label class="custom">
                         <input type="checkbox" class="check" required>
                         <span class="checkmark"></span>
                         I agree to terms of use
@@ -28,7 +25,7 @@
                     <input type="submit" name="submit" class="button" value="Sign In">
                 </form>
                 <a href="#" class="forgot-pswd">Forgot password?</a>
-                <label>
+                <label class="custom">
                     <input type="checkbox" class="check" checked>
                     <span class="checkmark"></span>
                     Remember me
@@ -36,13 +33,13 @@
                 <div class="other-meth-sign">
                     <div class="google">
                         <a href="#">
-                            <img src="images/social_media/google.png" alt="google">
+                            <img src="/images/social_media/google.png" alt="google">
                             <p>Sign In with Google</p>
                         </a>
                     </div>
                     <div class="facebook">
                         <a href="#">
-                            <img src="images/social_media/facebook.png" alt="google">
+                            <img src="/images/social_media/facebook.png" alt="google">
                             <p>Sign In with facebook</p>
                        </a>
                     </div>

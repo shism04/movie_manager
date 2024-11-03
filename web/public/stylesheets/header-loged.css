@@ -1,0 +1,92 @@
+@import url(header.css);
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+
+.off-canvas {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.off-canvas-content {
+    display: flex;
+    flex-direction: column;
+
+    div.top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        div.user{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                color: black;
+            }
+            img{
+                width: 2.1rem;
+                height: 2.1rem;
+            }
+        }
+        img.close{
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: var(--primary-color);
+            transition: .4s;
+            padding: .3rem;
+
+            &:hover{
+                background-color: var(--third-color);
+            }
+        }
+    }
+}
+
+.off-canvas-links  {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-decoration: none;
+
+
+    a{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: black;
+        text-decoration: none;
+        transition: .4s;
+
+        &:hover{
+            color: var(--third-color);
+        }
+       
+    }
+}
+
+
+
+
+
+
+.off-canvas.open {
+    right: 0;
+}

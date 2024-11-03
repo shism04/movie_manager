@@ -1,0 +1,49 @@
+<div class="logo">
+    <a href="/">
+        <img src="/images/logo.png" alt="Logo" />
+        <span>cine</span><span class="secure">Secure</span>
+    </a>
+</div>
+
+<nav class="nav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+            <a href="/my-collection">My Collection</a>
+            <ul class="submenu">
+                <li><a href="/my-collection">View All Movies</a></li>
+                <li><a href="/new-movie">Add Movie</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">Contact & Support</a></li>
+    </ul>
+</nav>
+
+<div class="account">
+    <img src="/images/icons/profile-user.png" alt="icon user" class="icon user" onclick="toggleOffCanvas()" />
+    <img src="/images/icons/menu.png" alt="icon menu" class="icon menu" onclick="toggleOffCanvas()" />
+</div>
+
+<div class="off-canvas" id="offCanvas">
+    <div class="off-canvas-content">
+        <div class="top">
+            <div class="user">
+                <img src="/images/icons/profile-user (1).png" alt="User Icon" class="icon user" />
+                <span class="user-name">
+                    <%= userName.split(' ')[0] %>
+                </span>
+            </div>
+            <img src="/images/icons/close (1).png"  class="icon close" onclick="toggleOffCanvas()">
+        </div>
+        <div class="off-canvas-links">
+            <a href="/contact" class="help">
+                <img src="/images/icons/customer-support.png" alt="" class="icon support">
+                <span>Help&Support</span>
+            </a>
+            <a href="/log-out" class="log-out">
+                <img src="/images/icons/logout.png" alt="" class="icon log-out">
+                <span>Log out</span>
+            </a>  
+        </div>
+    </div>
+</div>

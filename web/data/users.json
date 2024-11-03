@@ -1,11 +1,145 @@
 [
   {
+    "id": 1,
     "fullName": "Ismael sihammou",
-    "email": "maria.lopez@example.com",
-    "password": "$2b$10$3pdsein6TihV89qX7pKggueNf5oa9Bne5zx3t8ARyGQ7.4JtRElSC"
+    "email": "kingismaelsihammou@gmail.com",
+    "password": "$2b$10$AzWEWOA30J0B3o6oPhvPFuprRDliSo2E3itAsjkM3PQaPlWoREXFu",
+    "films": [
+      {
+        "id": 1,
+        "title": "Intersellar",
+        "genres": "Ciencia ficción, Drama",
+        "releaseYr": "2014",
+        "director": "Christopher Nolan",
+        "image": "uploads\\388bd96a1192c652250b44afcdf8fb5f",
+        "description": " Un equipo de astronautas emprende un viaje a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad mientras la Tierra enfrenta una crisis ambiental.",
+        "copies": [
+          {
+            "id":1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-02"
+          },
+          {
+            "id":2,
+            "condition": "bad",
+            "format": "blue-ray",
+            "dateAdd": "2024-11-02"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Oppenheimer",
+        "genres": "Drama, Biografía, Histórico",
+        "releaseYr": "2023",
+        "director": "Christopher Nolan",
+        "image": "uploads\\6b31699360a5d6813a1ac6e3e9dd3002",
+        "description": "Narra la vida de J. Robert Oppenheimer, el físico detrás del proyecto Manhattan, y la creación de la primera bomba atómica durante la Segunda Guerra Mundial.",
+        "copies": [
+          {
+            "id":1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-02"
+          },
+          {
+            "id":2,
+            "condition": "bad",
+            "format": "blue-ray",
+            "dateAdd": "2024-11-02"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Dune",
+        "genres": "Ciencia ficción, Aventura",
+        "releaseYr": "2021",
+        "director": "Denis Villeneuve",
+        "image": "uploads\\0efb4ff7be4c2ac342cde6157e94071a",
+        "description": "Basada en la novela de Frank Herbert, sigue la historia de Paul Atreides, un joven noble que debe proteger su casa y su gente en el peligroso planeta desértico Arrakis.",
+        "copies": [
+          {
+            "id":1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-02"
+          },
+          {
+            "id":2,
+            "condition": "bad",
+            "format": "blue-ray",
+            "dateAdd": "2024-11-02"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Top Gun",
+        "genres": "Acción, Drama",
+        "releaseYr": "1986",
+        "director": "Tony Scott",
+        "image": "uploads\\ef42602f7137893ef6655e939ca8bb26",
+        "description": "La historia sigue a Maverick, un joven piloto talentoso pero temerario, que entrena en la prestigiosa escuela de pilotos de combate Top Gun, enfrentando desafíos en el aire y en su vida personal.",
+        "copies": [
+          {
+            "id":1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-02"
+          },
+          {
+            "id":2,
+            "condition": "bad",
+            "format": "blue-ray",
+            "dateAdd": "2024-11-02"
+          }
+        ]
+      }
+    ]
   },
   {
-    "fullName": "maria.lopez@example.com",
-    "email": "1234"
+    "id": 2,
+    "fullName": "soufian sihammou",
+    "email": "soufianasihammou@gmail.com",
+    "password": "$2b$10$8dgd9GaYeziNm/lXT.cqFeye6W9ELECLud0NrOqkJWKVtsX2Uf9Sm",
+    "films": [
+      {
+        "id": 1,
+        "title": "Top Gun",
+        "genres": "Acción, Drama",
+        "releaseYr": "1986",
+        "director": "Tony Scott",
+        "image": "uploads\\212012257b154c0f28fa372f1300296f",
+        "description": "sqsqs",
+        "copies": [
+          {
+            "id": 1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-03"
+          },
+          {
+            "id": 2,
+            "condition": "qsqs",
+            "format": "qsqs",
+            "dateAdd": "2024-11-03"
+          },
+          {
+            "id": 3,
+            "condition": "qsqs",
+            "format": "qsqs",
+            "dateAdd": "2024-11-03"
+          },
+          {
+            "id": 4,
+            "condition": "qsqs",
+            "format": "qsqs",
+            "dateAdd": "2024-11-03"
+          }
+        ]
+      }
+    ]
   }
 ]
