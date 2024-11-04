@@ -31,7 +31,7 @@ router.get('/signin', function (req, res, next) {
 router.get('/log-out', function (req, res, next) {
   req.session.login = false;
   req.session.user = {};
-  res.redirect('/signin');
+  res.redirect('/');
 });
 
 router.get('/signUp', function (req, res, next) {

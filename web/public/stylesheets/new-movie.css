@@ -8,7 +8,6 @@
 }
 
 .container .copia-section {
-    max-width: 400px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
@@ -64,8 +63,13 @@ textarea {
 .copias {
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
     gap: 40px;
+
+
+    input{
+        width: 30vw;
+    }
 
     .addnew {
         display: flex;
