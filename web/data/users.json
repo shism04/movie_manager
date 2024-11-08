@@ -15,13 +15,13 @@
         "description": " Un equipo de astronautas emprende un viaje a través de un agujero de gusano para encontrar un nuevo hogar para la humanidad mientras la Tierra enfrenta una crisis ambiental.",
         "copies": [
           {
-            "id":1,
+            "id": 1,
             "condition": "good",
             "format": "dvd's",
             "dateAdd": "2024-11-02"
           },
           {
-            "id":2,
+            "id": 2,
             "condition": "bad",
             "format": "blue-ray",
             "dateAdd": "2024-11-02"
@@ -38,13 +38,13 @@
         "description": "Narra la vida de J. Robert Oppenheimer, el físico detrás del proyecto Manhattan, y la creación de la primera bomba atómica durante la Segunda Guerra Mundial.",
         "copies": [
           {
-            "id":1,
+            "id": 1,
             "condition": "good",
             "format": "dvd's",
             "dateAdd": "2024-11-02"
           },
           {
-            "id":2,
+            "id": 2,
             "condition": "bad",
             "format": "blue-ray",
             "dateAdd": "2024-11-02"
@@ -61,13 +61,13 @@
         "description": "Basada en la novela de Frank Herbert, sigue la historia de Paul Atreides, un joven noble que debe proteger su casa y su gente en el peligroso planeta desértico Arrakis.",
         "copies": [
           {
-            "id":1,
+            "id": 1,
             "condition": "good",
             "format": "dvd's",
             "dateAdd": "2024-11-02"
           },
           {
-            "id":2,
+            "id": 2,
             "condition": "bad",
             "format": "blue-ray",
             "dateAdd": "2024-11-02"
@@ -84,16 +84,33 @@
         "description": "La historia sigue a Maverick, un joven piloto talentoso pero temerario, que entrena en la prestigiosa escuela de pilotos de combate Top Gun, enfrentando desafíos en el aire y en su vida personal.",
         "copies": [
           {
-            "id":1,
+            "id": 1,
             "condition": "good",
             "format": "dvd's",
             "dateAdd": "2024-11-02"
           },
           {
-            "id":2,
+            "id": 2,
             "condition": "bad",
             "format": "blue-ray",
             "dateAdd": "2024-11-02"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Top Gun",
+        "genres": "Acción, Drama",
+        "releaseYr": "1986",
+        "director": "Tony Scott",
+        "image": "uploads\\1e46463e8ed917ff9990e463e67b2d63",
+        "description": "cscsc",
+        "copies": [
+          {
+            "id": 1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-07"
           }
         ]
       }
@@ -137,6 +154,23 @@
             "condition": "qsqs",
             "format": "qsqs",
             "dateAdd": "2024-11-03"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Top Gun",
+        "genres": "Acción, Drama",
+        "releaseYr": "1986",
+        "director": "Tony Scott",
+        "image": "uploads\\c106cf3f37c44577be1ac4094e1bfd73",
+        "description": "asasasa",
+        "copies": [
+          {
+            "id": 1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-07"
           }
         ]
       }

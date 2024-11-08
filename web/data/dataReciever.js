@@ -19,7 +19,7 @@ function insertUser(fullName, email, password, callback) {
         
         let id = users.length > 0 ? users.length + 1 : 1;
         
-        let newUser = {id:id,userName:userName, fullName: fullName, email: email, password: hashedPassword,films:[] };
+        let newUser = {id:id, fullName: fullName, email: email, password: hashedPassword,films:[] };
 
         users.push(newUser);
 
