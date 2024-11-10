@@ -103,14 +103,26 @@
         "genres": "Acción, Drama",
         "releaseYr": "1986",
         "director": "Tony Scott",
-        "image": "uploads\\1e46463e8ed917ff9990e463e67b2d63",
-        "description": "cscsc",
+        "image": "uploads\\e80fca3d43651346907ded451253e7ab",
+        "description": "test",
         "copies": [
           {
             "id": 1,
             "condition": "good",
             "format": "dvd's",
-            "dateAdd": "2024-11-07"
+            "dateAdd": "2024-11-10"
+          },
+          {
+            "id": 2,
+            "condition": "bad",
+            "format": "blue-ray",
+            "dateAdd": "2024-11-10"
+          },
+          {
+            "id": 3,
+            "condition": "bad",
+            "format": "dvd",
+            "dateAdd": "2024-11-10"
           }
         ]
       }
@@ -171,6 +183,43 @@
             "condition": "good",
             "format": "dvd's",
             "dateAdd": "2024-11-07"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fullName": "adrian",
+    "password": "$2b$10$l9.CQKB5v5wzToWIITNHtu4/LrJwqPIpQfbYmnQA1IzwCNbQ0GAmG",
+    "films": []
+  },
+  {
+    "id": 4,
+    "fullName": "adrian",
+    "password": "$2b$10$0BI0UsiIIbX0PoHHaoe6c./R60gk4FHfXjfdZPH4F/l1H2yCTgJ7O",
+    "films": []
+  },
+  {
+    "id": 5,
+    "fullName": "adrian",
+    "email": "adrian@gmail.com",
+    "password": "$2b$10$4Lhn5a8sZTZ8WtiJtBrFveYJzuu1n20PfJVGPKr87M78IsS4S4AYS",
+    "films": [
+      {
+        "id": 1,
+        "title": "Top Gun",
+        "genres": "Acción, Drama",
+        "releaseYr": "1986",
+        "director": "Tony Scott",
+        "image": "uploads\\431c1cea88070b7fe732b4d80cfe8d88",
+        "description": "ff",
+        "copies": [
+          {
+            "id": 1,
+            "condition": "good",
+            "format": "dvd's",
+            "dateAdd": "2024-11-10"
           }
         ]
       }

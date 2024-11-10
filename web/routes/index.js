@@ -50,7 +50,7 @@ router.post('/signin', async function (req, res, next) {
 });
 
 router.post('/signUp', function (req, res, next) {
-  reciver.insertUser(req.body.fullName,req.body.userName, req.body.userEmail, req.body.pswd, async (err) => {
+  reciver.insertUser(req.body.fullName, req.body.userEmail, req.body.pswd, async (err) => {
     if (err) {
       console.error("Error al registrar el usuario:", err);
       res.redirect('/signUp');
